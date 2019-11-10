@@ -1,0 +1,8 @@
+﻿/*
+    Boostrap の container の設定
+*/
+.container {
+    width : 100%;
+    padding-left : 20px;
+    padding-right : 20px;
+}
