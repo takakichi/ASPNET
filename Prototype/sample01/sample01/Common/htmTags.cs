@@ -16,12 +16,14 @@ namespace sample01.Common
         /// </summary>
         /// <param name="html">画面番号</param>
         /// <returns>画面タイトル</returns>
-        public string setTitle(string html)
+        public string getTitle(string html)
         {
             string result = string.Empty;
 
             switch ( html.ToUpper() )
             {
+                case "TOPPAGE":
+                    result = "選択画面"; break;
                 case "S01" :
                     result = "";  break;
                 default:

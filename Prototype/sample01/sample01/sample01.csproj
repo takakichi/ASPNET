@@ -86,6 +86,17 @@
     <Content Include="Data\Books\001\cosmos-4532636_1280.jpg" />
     <Content Include="Data\Books\001\hot-air-balloons-4561274_1280.jpg" />
     <Content Include="Form\category03\v01.aspx" />
+    <Content Include="Form\category03\v02.aspx" />
+    <Content Include="Form\category04\g01.aspx" />
+    <Content Include="Form\gategory05\t01.aspx" />
+    <Content Include="Images\btnMenuSampleDataGrid.gif" />
+    <Content Include="Images\btnMenuSampleGraph01.gif" />
+    <Content Include="Images\btnMenuSampleGraph02.gif" />
+    <Content Include="Images\btnMenuSampleImageDisplay01.gif" />
+    <Content Include="Images\btnMenuSampleImageDisplay02.gif" />
+    <Content Include="Images\btnMenuSamplePageLayout.gif" />
+    <Content Include="Images\btnMenuSampleTree01.gif" />
+    <Content Include="Images\btnMenuSampleTree02.gif" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -156,6 +167,27 @@
     <Compile Include="Form\category03\v01.aspx.designer.cs">
       <DependentUpon>v01.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Form\category03\v02.aspx.cs">
+      <DependentUpon>v02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\category03\v02.aspx.designer.cs">
+      <DependentUpon>v02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\category04\g01.aspx.cs">
+      <DependentUpon>g01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\category04\g01.aspx.designer.cs">
+      <DependentUpon>g01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\gategory05\t01.aspx.cs">
+      <DependentUpon>t01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\gategory05\t01.aspx.designer.cs">
+      <DependentUpon>t01.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Form\topPage.aspx.cs">
       <DependentUpon>topPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,10 +202,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="BLL\category04\" />
+    <Folder Include="BLL\category05\" />
     <Folder Include="Data\Books\002\" />
     <Folder Include="DLL\" />
     <Folder Include="Entity\" />
-    <Folder Include="Images\" />
     <Folder Include="services\" />
   </ItemGroup>
   <ItemGroup>
