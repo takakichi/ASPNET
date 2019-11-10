@@ -13,13 +13,13 @@ namespace sample01.Form {
     public partial class topPage {
         
         /// <summary>
-        /// HtmlTitle コントロール。
+        /// captionName コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTitle HtmlTitle;
+        protected global::System.Web.UI.HtmlControls.HtmlTitle captionName;
         
         /// <summary>
         /// form1 コントロール。
@@ -40,13 +40,13 @@ namespace sample01.Form {
         protected global::System.Web.UI.WebControls.Button btnBack;
         
         /// <summary>
-        /// captionName コントロール。
+        /// titleName コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label captionName;
+        protected global::System.Web.UI.WebControls.Label titleName;
         
         /// <summary>
         /// btnEnd コントロール。
@@ -56,5 +56,50 @@ namespace sample01.Form {
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEnd;
+        
+        /// <summary>
+        /// imgBtn01 コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn01;
+        
+        /// <summary>
+        /// imgBtn02 コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn02;
+        
+        /// <summary>
+        /// imgBtn03 コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn03;
+        
+        /// <summary>
+        /// imgBtn04 コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn04;
+        
+        /// <summary>
+        /// imgBtn05 コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgBtn05;
     }
 }

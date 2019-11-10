@@ -21,11 +21,35 @@ namespace sample01.Form.category01
         /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            HtmlTitle.Text  = "サンプル画面01";
-            captionName.Text = "サンプル画面01";
+            if (!IsPostBack)
+            {
+                Common.htmTags htmlTags = new Common.htmTags();
+                string title = htmlTags.getTitle(this.GetType().BaseType.Name);
+                captionName.Text = title;
+                titleName.Text = title;
+            }
         }
+
         #endregion
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("./../TopPage.aspx");
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnEnd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

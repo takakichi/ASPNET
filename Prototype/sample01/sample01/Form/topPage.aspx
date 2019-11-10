@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title id="HtmlTitle" runat="server"></title>
+    <title id="captionName" runat="server"></title>
     <link rel="stylesheet" href="../css/uikit/uikit.min.css" />
     <link rel="stylesheet" href="../css/uikit/uikit-rtl.min.css" />
     <link rel="stylesheet" href="../css/base.css" />
@@ -24,7 +24,7 @@
                 <asp:Button ID="btnBack" runat="server" Text="戻る" CssClass="uk-button uk-button-primary buttonRadius"  />
             </div>
             <div class="uk-logo">
-                <div class="uk-h3" style="margin:6px 0px 0px 0px;vertical-align:middle;"><asp:label runat="server" ID="captionName"></asp:label></div>
+                <div class="uk-h3" style="margin:6px 0px 0px 0px;vertical-align:middle;"><asp:label runat="server" ID="titleName"></asp:label></div>
             </div>
             <div class="uk-navbar-right" style="margin-right:20px;">
                 <asp:Button ID="btnEnd" runat="server" Text="終了"  CssClass="uk-button uk-button-primary buttonRadius" />
@@ -33,10 +33,14 @@
         <!-- メインコンテンツ -->
         <main>
         <div class="uk-section uk-padding-remove-vertical">
-            <div class="uk-text-center uk-background-secondary" style="margin-left:20px; margin-right:20px;">
-                    <a href="./Form/category01/s01.aspx">S01</a><br />
-                    <a href="./Form/category02/r01.aspx">R01</a><br />
-                    <a href="./Form/category03/v01.aspx">V01</a><br />
+            <div class="uk-text-left uk-background-secondary" style="margin-left:20px; margin-right:20px;">
+                    <asp:ImageButton runat="server" ID="imgBtn01" ImageUrl="~/Images/btnMenuSampleDataGrid.gif" /><br />
+                    <asp:ImageButton runat="server" ID="imgBtn02" ImageUrl="~/Images/btnMenuSamplePageLayout.gif" /><br />
+                    <asp:ImageButton runat="server" ID="imgBtn03" ImageUrl="~/Images/btnMenuSampleImageDisplay01.gif" /><br />
+                    <asp:ImageButton runat="server" ID="imgBtn04" ImageUrl="~/Images/btnMenuSampleImageDisplay02.gif" /><br />
+                    <asp:ImageButton runat="server" ID="imgBtn05" ImageUrl="~/Images/btnMenuSampleTree02.gif" /><br />
+
+                    サイズ 40px(縦)×300px(横)、フォント (J) HGRSGU サイズ 16px<br />
             </div>
         </div>
         </main>

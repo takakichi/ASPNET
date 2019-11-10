@@ -13,13 +13,13 @@ namespace sample01.Form.category01 {
     public partial class s01 {
         
         /// <summary>
-        /// HtmlTitle コントロール。
+        /// captionName コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTitle HtmlTitle;
+        protected global::System.Web.UI.HtmlControls.HtmlTitle captionName;
         
         /// <summary>
         /// form1 コントロール。
@@ -40,13 +40,13 @@ namespace sample01.Form.category01 {
         protected global::System.Web.UI.WebControls.Button btnBack;
         
         /// <summary>
-        /// captionName コントロール。
+        /// titleName コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label captionName;
+        protected global::System.Web.UI.WebControls.Label titleName;
         
         /// <summary>
         /// btnEnd コントロール。

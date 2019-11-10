@@ -11,7 +11,13 @@ namespace sample01.Form.category03
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                Common.htmTags htmlTags = new Common.htmTags();
+                string title = htmlTags.getTitle(this.GetType().BaseType.Name);
+                captionName.Text = title;
+                titleName.Text = title;
+            }
         }
     }
 }

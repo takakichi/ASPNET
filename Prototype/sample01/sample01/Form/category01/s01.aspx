@@ -6,18 +6,13 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title id="HtmlTitle" runat="server"></title>
+    <title id="captionName" runat="server"></title>
     <link rel="stylesheet" href="../../css/uikit/uikit.min.css" />
     <link rel="stylesheet" href="../../css/uikit/uikit-rtl.min.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <script lang="ja" type="text/javascript" src="../../Scripts/uikit/uikit.min.js"></script>
     <script lang="ja" type="text/javascript" src="../../Scripts/jquery/jquery-1.12.4.js"></script>
     <script lang="ja" type="text/javascript" src="../../Scripts/base.js"></script>
-    <style>
-        .buttonRadius {
-            border-radius : 10px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,13 +20,13 @@
         <!-- ヘッダコンテンツ -->
         <nav class="uk-navbar-container uk-nav-header uk-margin " uk-navbar data-uk-sticky style="height:60px;">
             <div class="uk-navbar-left" style="margin-left:20px">
-                <asp:Button ID="btnBack" runat="server" Text="戻る" CssClass="uk-button uk-button-primary buttonRadius"  />
+                <asp:Button ID="btnBack" runat="server" Text="戻る" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btnBack_Click"  />
             </div>
             <div class="uk-logo">
-                <div class="uk-h2"><asp:label runat="server" ID="captionName"></asp:label></div>
+                <div class="uk-h2"><asp:label runat="server" ID="titleName"></asp:label></div>
             </div>
             <div class="uk-navbar-right" style="margin-right:20px;">
-                <asp:Button ID="btnEnd" runat="server" Text="終了"  CssClass="uk-button uk-button-primary buttonRadius" />
+                <asp:Button ID="btnEnd" runat="server" Text="終了"  CssClass="uk-button uk-button-primary buttonRadius" OnClick="btnEnd_Click" />
             </div>
         </nav>
         <main>

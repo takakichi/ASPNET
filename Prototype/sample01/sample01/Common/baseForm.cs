@@ -12,6 +12,5 @@ namespace sample01.Common
     /// </summary>
     public class baseForm : System.Web.UI.Page
     {
-        
     }
 }
