@@ -29,7 +29,6 @@ namespace sample01.Form.category01
                 titleName.Text = title;
             }
         }
-
         #endregion
 
         /// <summary>

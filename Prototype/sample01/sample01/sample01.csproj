@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,6 +53,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -88,7 +92,10 @@
     <Content Include="Form\category03\v01.aspx" />
     <Content Include="Form\category03\v02.aspx" />
     <Content Include="Form\category04\g01.aspx" />
-    <Content Include="Form\gategory05\t01.aspx" />
+    <Content Include="Form\category05\t01.aspx" />
+    <Content Include="Form\category06\lv01.aspx" />
+    <Content Include="Form\category07\tbl01.aspx" />
+    <Content Include="Form\category08\session01.aspx" />
     <Content Include="Images\btnMenuSampleDataGrid.gif" />
     <Content Include="Images\btnMenuSampleGraph01.gif" />
     <Content Include="Images\btnMenuSampleGraph02.gif" />
@@ -128,6 +135,8 @@
     <Content Include="Scripts\viewer\viewer.js" />
     <Content Include="Scripts\viewer\viewer.min.css" />
     <Content Include="Scripts\viewer\viewer.min.js" />
+    <Content Include="services\asmxService01.asmx" />
+    <Content Include="services\wcfService01.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +155,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Entity\DataEntity.cs" />
     <Compile Include="Form\category01\s01.aspx.cs">
       <DependentUpon>s01.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -181,12 +191,33 @@
     <Compile Include="Form\category04\g01.aspx.designer.cs">
       <DependentUpon>g01.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Form\gategory05\t01.aspx.cs">
+    <Compile Include="Form\category05\t01.aspx.cs">
       <DependentUpon>t01.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Form\gategory05\t01.aspx.designer.cs">
+    <Compile Include="Form\category05\t01.aspx.designer.cs">
       <DependentUpon>t01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\category06\lv01.aspx.cs">
+      <DependentUpon>lv01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\category06\lv01.aspx.designer.cs">
+      <DependentUpon>lv01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\category07\tbl01.aspx.cs">
+      <DependentUpon>tbl01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\category07\tbl01.aspx.designer.cs">
+      <DependentUpon>tbl01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form\category08\session01.aspx.cs">
+      <DependentUpon>session01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form\category08\session01.aspx.designer.cs">
+      <DependentUpon>session01.aspx</DependentUpon>
     </Compile>
     <Compile Include="Form\topPage.aspx.cs">
       <DependentUpon>topPage.aspx</DependentUpon>
@@ -199,6 +230,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\asmxService01.asmx.cs">
+      <DependentUpon>asmxService01.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="services\wcfService01.svc.cs">
+      <DependentUpon>wcfService01.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -206,8 +244,6 @@
     <Folder Include="BLL\category05\" />
     <Folder Include="Data\Books\002\" />
     <Folder Include="DLL\" />
-    <Folder Include="Entity\" />
-    <Folder Include="services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\base.js" />

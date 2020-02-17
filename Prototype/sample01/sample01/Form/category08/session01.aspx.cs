@@ -5,20 +5,21 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace sample01.Form.category02
+namespace sample01.Form.category08
 {
-    public partial class r01 : System.Web.UI.Page
+    public partial class session01 : System.Web.UI.Page
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if ( !IsPostBack )
             {
-                Common.htmTags htmlTags = new Common.htmTags();
-                string title = htmlTags.getTitle(this.GetType().BaseType.Name);
-                captionName.Text = title;
-                titleName.Text = title;
+                Session["Name"] = "値はこれです";
             }
-
         }
 
         #region "btnBack_Click : 「戻る」ボタンの処理"

@@ -19,7 +19,7 @@
     <form id="form1" runat="server">
     <div id="wrapper">
         <!-- ヘッダコンテンツ -->
-        <nav class="uk-navbar-container uk-nav-header uk-margin " uk-navbar data-uk-sticky style="height:60px;">
+        <nav class="uk-navbar-container uk-nav-header uk-margin" uk-navbar data-uk-sticky style="height:60px;background-color:white;">
             <div class="uk-navbar-left" style="margin-left:20px">
                 <asp:Button ID="btnBack" runat="server" Text="戻る" CssClass="uk-button uk-button-primary buttonRadius"  />
             </div>
@@ -33,14 +33,16 @@
         <!-- メインコンテンツ -->
         <main>
         <div class="uk-section uk-padding-remove-vertical">
-            <div class="uk-text-left uk-background-secondary" style="margin-left:20px; margin-right:20px;">
-                    <asp:ImageButton runat="server" ID="imgBtn01" ImageUrl="~/Images/btnMenuSampleDataGrid.gif" /><br />
-                    <asp:ImageButton runat="server" ID="imgBtn02" ImageUrl="~/Images/btnMenuSamplePageLayout.gif" /><br />
-                    <asp:ImageButton runat="server" ID="imgBtn03" ImageUrl="~/Images/btnMenuSampleImageDisplay01.gif" /><br />
-                    <asp:ImageButton runat="server" ID="imgBtn04" ImageUrl="~/Images/btnMenuSampleImageDisplay02.gif" /><br />
-                    <asp:ImageButton runat="server" ID="imgBtn05" ImageUrl="~/Images/btnMenuSampleTree02.gif" /><br />
-
-                    サイズ 40px(縦)×300px(横)、フォント (J) HGRSGU サイズ 16px<br />
+            <div class="uk-text-left" style="margin-left:20px; margin-right:20px;">
+                <asp:Button runat="server" ID="btn01" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="データグリッドサンプル(その1)" /><br /><br />
+                <asp:Button runat="server" ID="btn02" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="ページレイアウトサンプル(その1)" /><br /><br />
+                <asp:Button runat="server" ID="btn03" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="イメージ表示サンプル(その1)" /><br /><br />
+                <asp:Button runat="server" ID="btn04" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="イメージ表示サンプル(その2)" /><br /><br />
+                <asp:Button runat="server" ID="btn05" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="ツリー表示サンプル(その1)" /><br /><br />
+                <asp:Button runat="server" ID="btn06" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="ツリー表示サンプル(その2)" /><br /><br />
+                <asp:Button runat="server" ID="btn07" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="テーブル複数切替サンプル(その1)" /><br /><br />
+                <asp:Button runat="server" ID="btn08" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="セッションテスト" /><br /><br />
+                サイズ 40px(縦)×300px(横)、フォント (J) HGRSGU サイズ 16px<br />
             </div>
         </div>
         </main>

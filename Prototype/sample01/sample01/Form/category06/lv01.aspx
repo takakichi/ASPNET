@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="r01.aspx.cs" Inherits="sample01.Form.category02.r01" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="lv01.aspx.cs" Inherits="sample01.Form.category06.lv01" %>
 
 <!DOCTYPE html>
 
@@ -32,14 +32,28 @@
         </nav>
         <!-- メインコンテンツ -->
         <main>
-            <div class="uk-section uk-background-secondary" style="margin-left:20px; margin-right:20px;">
+            <div class="uk-section" style="margin-left:20px; margin-right:20px;">
+                <asp:ListView ID="lvData" runat="server">
+                    <EmptyDataTemplate>
+
+                    </EmptyDataTemplate>
+                    <ItemTemplate>
+                    </ItemTemplate>
+                </asp:ListView>
+                <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lvData">
+                    <Fields>
+                        <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                        <asp:NumericPagerField />
+                        <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                    </Fields>
+                </asp:DataPager>
             </div>
         </main>
-        <!-- フッダコンテンツ -->
-        <footer class="uk-text-center uk-background-secondary">
+       <!-- フッダコンテンツ -->
+        <footer class="uk-text-center">
             <hr />
             <p class="uk-text-small">サンプルシステム</p>
-        </footer>    
+        </footer>
     </div>
     </form>
 </body>

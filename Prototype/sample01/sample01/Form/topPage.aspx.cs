@@ -7,7 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace sample01.Form
 {
-    public partial class topPage : System.Web.UI.Page
+    /// <summary>
+    /// 
+    /// </summary>
+    public partial class topPage : Common.baseForm 
     {
         #region "Page_Load : フォームロード処理"
         /// <summary>
@@ -26,5 +29,37 @@ namespace sample01.Form
             }
         }
         #endregion
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btn_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            if ( clickedButton != null )
+            {
+                string clientID = clickedButton.ID;
+                switch (clientID)
+                {
+                    case "btn01":
+                        Response.Redirect("./category01/s01.aspx"); break;
+                    case "btn02":
+                        Response.Redirect("./category02/r01.aspx"); break;
+                    case "btn03":
+                        Response.Redirect("./category03/v01.aspx"); break;
+                    case "btn04":
+                        Response.Redirect("./category03/v02.aspx"); break;
+                    case "btn05":
+                        Response.Redirect("./category05/t01.aspx"); break;
+                    case "btn07":
+                        Response.Redirect("./category07/tbl01.aspx"); break;
+                    case "btn08":
+                        Response.Redirect("./category08/session01.aspx"); break;
+                }
+            }
+
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace sample01
         /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            Server.Transfer("./Form/topPage.aspx");
+            Response.Redirect("./Form/topPage.aspx",true);
         }
     }
 }

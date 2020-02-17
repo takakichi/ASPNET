@@ -9,7 +9,7 @@
     <title id="captionName" runat="server"></title>
     <link rel="stylesheet" href="../../css/uikit/uikit.min.css" />
     <link rel="stylesheet" href="../../css/uikit/uikit-rtl.min.css" />
-    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../../css/base.css" />
     <script lang="ja" type="text/javascript" src="../../Scripts/uikit/uikit.min.js"></script>
     <script lang="ja" type="text/javascript" src="../../Scripts/jquery/jquery-1.12.4.js"></script>
     <script lang="ja" type="text/javascript" src="../../Scripts/base.js"></script>

@@ -25,11 +25,24 @@ namespace sample01.Common
                 case "TOPPAGE":
                     result = "選択画面"; break;
                 case "S01" :
-                    result = "";  break;
+                    result = "データグリッドサンプル(その1)";  break;
+                case "R01":
+                    result = "ページレイアウトサンプル(その1)"; break;
+                case "V01":
+                    result = "イメージ表示サンプル(その1)"; break;
+                case "V02":
+                    result = "イメージ表示サンプル(その2)"; break;
+                case "G01":
+                    result = "？？？？表示サンプル(その1)"; break;
+                case "T01":
+                    result = "ツリー表示サンプル(その1)"; break;
+                case "LV01":
+                    result = "リストビュー表示サンプル(その1)"; break;
+                case "TBL01":
+                    result = "テーブル複数切替サンプル(その1)"; break;
                 default:
                     result = "";  break;
             }
-
             return result;
         }
         #endregion

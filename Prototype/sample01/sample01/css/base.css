@@ -6,6 +6,17 @@
     background-color : cadetblue;
 }
 
+.titleBlack {
+    color : white;
+    background-color : black;
+}
+
+.titleWhite {
+    color : black;
+    background-color : white;
+}
+
+
 /*
 
 */

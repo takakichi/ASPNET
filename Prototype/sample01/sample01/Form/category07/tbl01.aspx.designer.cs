@@ -7,10 +7,10 @@
 // </自動生成>
 //------------------------------------------------------------------------------
 
-namespace sample01.Form {
+namespace sample01.Form.category07 {
     
     
-    public partial class topPage {
+    public partial class tbl01 {
         
         /// <summary>
         /// captionName コントロール。
@@ -58,75 +58,39 @@ namespace sample01.Form {
         protected global::System.Web.UI.WebControls.Button btnEnd;
         
         /// <summary>
-        /// btn01 コントロール。
+        /// gvData01 コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn01;
+        protected global::System.Web.UI.WebControls.GridView gvData01;
         
         /// <summary>
-        /// btn02 コントロール。
+        /// gvData02 コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn02;
+        protected global::System.Web.UI.WebControls.GridView gvData02;
         
         /// <summary>
-        /// btn03 コントロール。
+        /// gvData03 コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn03;
+        protected global::System.Web.UI.WebControls.GridView gvData03;
         
         /// <summary>
-        /// btn04 コントロール。
+        /// gvData04 コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn04;
-        
-        /// <summary>
-        /// btn05 コントロール。
-        /// </summary>
-        /// <remarks>
-        /// 自動生成されたフィールド。
-        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn05;
-        
-        /// <summary>
-        /// btn06 コントロール。
-        /// </summary>
-        /// <remarks>
-        /// 自動生成されたフィールド。
-        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn06;
-        
-        /// <summary>
-        /// btn07 コントロール。
-        /// </summary>
-        /// <remarks>
-        /// 自動生成されたフィールド。
-        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn07;
-        
-        /// <summary>
-        /// btn08 コントロール。
-        /// </summary>
-        /// <remarks>
-        /// 自動生成されたフィールド。
-        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn08;
+        protected global::System.Web.UI.WebControls.GridView gvData04;
     }
 }
