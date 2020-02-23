@@ -23,7 +23,7 @@ namespace sample01.Common
             switch ( html.ToUpper() )
             {
                 case "TOPPAGE":
-                    result = "選択画面"; break;
+                    result = "ASP.NET各種サンプル選択画面"; break;
                 case "S01" :
                     result = "データグリッドサンプル(その1)";  break;
                 case "R01":
@@ -36,6 +36,8 @@ namespace sample01.Common
                     result = "？？？？表示サンプル(その1)"; break;
                 case "T01":
                     result = "ツリー表示サンプル(その1)"; break;
+                case "T02":
+                    result = "ツリー表示サンプル(その2)"; break;
                 case "LV01":
                     result = "リストビュー表示サンプル(その1)"; break;
                 case "TBL01":

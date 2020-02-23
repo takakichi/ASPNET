@@ -33,14 +33,35 @@
         <!-- メインコンテンツ -->
         <main>
             <div class="uk-section" style="margin-left:20px; margin-right:20px;">
-                <asp:ListView ID="lvData" runat="server">
-                    <EmptyDataTemplate>
-
-                    </EmptyDataTemplate>
+                <asp:DataPager ID="dataPagerTop" runat="server" PagedControlID="lvData" PageSize="20">
+                    <Fields>
+                        <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                        <asp:NumericPagerField />
+                        <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                    </Fields>
+                </asp:DataPager>
+                <asp:ListView ID="lvData" runat="server" OnPagePropertiesChanging="lvData_PagePropertiesChanging">
                     <ItemTemplate>
+                        <tr>
+                            <td><%# Eval("data")%></td>
+                            <td><%# Eval("htmlTag")%></td>
+                        </tr>
                     </ItemTemplate>
+                    <EmptyDataTemplate>
+                        該当するデータは存在しません。
+                    </EmptyDataTemplate>
+                    <LayoutTemplate>
+                        <table id="lvDataTable" runat="server">
+                            <tr id="lvDataTableRow" runat="server" style="border:dotted;">
+                                <td id="lvDataTableColImage" runat="server" style="width:300px;"></td>
+                                <td id="lvDataTableColInfo" runat="server"  style="width:300px;"></td>
+                            </tr>
+                            <tr id="ItemPlaceholder" runat="server">  
+                            </tr>
+                        </table>
+                    </LayoutTemplate>
                 </asp:ListView>
-                <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lvData">
+                <asp:DataPager ID="dataPagerBottom" runat="server" PagedControlID="lvData" PageSize="20">
                     <Fields>
                         <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
                         <asp:NumericPagerField />

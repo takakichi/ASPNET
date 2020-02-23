@@ -57,6 +57,8 @@ namespace sample01.Form
                         Response.Redirect("./category07/tbl01.aspx"); break;
                     case "btn08":
                         Response.Redirect("./category08/session01.aspx"); break;
+                    case "btn09":
+                        Response.Redirect("./category06/lv01.aspx"); break;
                 }
             }
 

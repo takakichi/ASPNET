@@ -156,6 +156,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Entity\DataEntity.cs" />
+    <Compile Include="Entity\ListViewEntity.cs" />
     <Compile Include="Form\category01\s01.aspx.cs">
       <DependentUpon>s01.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

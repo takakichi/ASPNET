@@ -58,6 +58,15 @@ namespace sample01.Form.category06 {
         protected global::System.Web.UI.WebControls.Button btnEnd;
         
         /// <summary>
+        /// dataPagerTop コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataPager dataPagerTop;
+        
+        /// <summary>
         /// lvData コントロール。
         /// </summary>
         /// <remarks>
@@ -67,12 +76,12 @@ namespace sample01.Form.category06 {
         protected global::System.Web.UI.WebControls.ListView lvData;
         
         /// <summary>
-        /// DataPager1 コントロール。
+        /// dataPagerBottom コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataPager DataPager1;
+        protected global::System.Web.UI.WebControls.DataPager dataPagerBottom;
     }
 }

@@ -36,12 +36,13 @@
             <div class="uk-text-left" style="margin-left:20px; margin-right:20px;">
                 <asp:Button runat="server" ID="btn01" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="データグリッドサンプル(その1)" /><br /><br />
                 <asp:Button runat="server" ID="btn02" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="ページレイアウトサンプル(その1)" /><br /><br />
-                <asp:Button runat="server" ID="btn03" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="イメージ表示サンプル(その1)" /><br /><br />
+                <asp:Button runat="server" ID="btn03" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="イメージ表示サンプル(その1)" />&nbsp;&nbsp;
                 <asp:Button runat="server" ID="btn04" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="イメージ表示サンプル(その2)" /><br /><br />
-                <asp:Button runat="server" ID="btn05" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="ツリー表示サンプル(その1)" /><br /><br />
+                <asp:Button runat="server" ID="btn05" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="ツリー表示サンプル(その1)" />&nbsp;&nbsp;
                 <asp:Button runat="server" ID="btn06" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="ツリー表示サンプル(その2)" /><br /><br />
                 <asp:Button runat="server" ID="btn07" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="テーブル複数切替サンプル(その1)" /><br /><br />
                 <asp:Button runat="server" ID="btn08" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="セッションテスト" /><br /><br />
+                <asp:Button runat="server" ID="btn09" width="300px" CssClass="uk-button uk-button-primary buttonRadius" OnClick="btn_Click" Text="リストビューサンプル(その1)" /><br /><br />
                 サイズ 40px(縦)×300px(横)、フォント (J) HGRSGU サイズ 16px<br />
             </div>
         </div>

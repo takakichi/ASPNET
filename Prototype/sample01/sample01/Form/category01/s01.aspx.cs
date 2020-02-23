@@ -31,24 +31,28 @@ namespace sample01.Form.category01
         }
         #endregion
 
+        #region "btnBack_Click : 「戻る」ボタンの処理"
         /// <summary>
-        /// 
+        /// 「戻る」ボタンの処理
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         protected void btnBack_Click(object sender, EventArgs e)
         {
-            Server.Transfer("./../TopPage.aspx");
+            Response.Redirect("./../topPage.aspx");
         }
+        #endregion
 
+        #region "btnBack_Click : 「終了」ボタンの処理"
         /// <summary>
-        /// 
+        /// 「終了」ボタンの処理
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         protected void btnEnd_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("./../topPage.aspx");
         }
+        #endregion
     }
 }
